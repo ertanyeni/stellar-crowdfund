@@ -1,0 +1,87 @@
+/* Karargah "Daylight" design language — ported from Roy HQ (roy.css nexus theme). */
+:root {
+  --bg-deep: #d9d6cf;
+  --bg: #e7e4dd;
+  --surface-1: #f4f2ed;
+  --surface-2: #ece9e2;
+  --surface-3: #d6d2ca;
+
+  --line-soft: rgb(37 40 44 / 0.1);
+  --line: rgb(37 40 44 / 0.18);
+  --line-strong: rgb(37 40 44 / 0.34);
+
+  --ink: #25282c;
+  --ink-2: #3e4248;
+  --ink-3: #696d73;
+  --ink-4: #92949a;
+
+  --blue: #3157d5; /* primary */
+  --blue-hi: #2447b8;
+  --blue-wash: rgb(49 87 213 / 0.09);
+  --gold: #c48a36; /* signal accent */
+  --violet: #7c5a8d;
+  --red: #c75245;
+  --green: #54836d;
+  --coral: #d7674f;
+
+  --font-display: 'Bricolage Grotesque', 'Avenir Next', sans-serif;
+  --font-body: 'Hanken Grotesk', 'Avenir Next', sans-serif;
+  --font-data: 'Spline Sans Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  color-scheme: light;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  line-height: 1.5;
+  color: var(--ink);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 calc(3rem - 1px), var(--line-soft) calc(3rem - 1px) 3rem),
+    repeating-linear-gradient(0deg, transparent 0 calc(3rem - 1px), var(--line-soft) calc(3rem - 1px) 3rem),
+    var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+a {
+  color: var(--blue-hi);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--ink);
+}
+
+.num {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+}
