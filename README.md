@@ -11,7 +11,7 @@ Built as the **Orange Belt (Level 3)** submission for the
 builder challenge.
 
 > **🔗 Live demo:** https://ertanyeni.github.io/stellar-crowdfund/
-> **🎬 Demo video:** _see submission_
+> **🎬 Demo video:** https://youtube.com/shorts/VqyejItdl1U
 > ⚠️ Testnet only — no real funds are involved.
 
 ## On-chain references
