@@ -1,0 +1,19 @@
+[package]
+name = "crowdfund"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+# Only needed by the tests, so it doesn't get linked into the released Wasm
+# (a cdylib path-dep breaks the LTO Wasm build). The live cross-contract call
+# uses `env.invoke_contract` instead.
+reward-token = { path = "../reward-token", features = ["testutils"] }
