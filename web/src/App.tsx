@@ -28,6 +28,7 @@ import {
   explorerTx,
   explorerAccount,
 } from './lib/constants';
+import { short, fmt } from './lib/format';
 
 type TxState = 'idle' | 'pending' | 'success' | 'error';
 interface Tx {
@@ -35,10 +36,6 @@ interface Tx {
   message?: string;
   hash?: string;
 }
-
-const short = (a: string, n = 4) =>
-  a.length <= n * 2 + 1 ? a : `${a.slice(0, n)}…${a.slice(-n)}`;
-const fmt = (n: number) => n.toLocaleString('en-US');
 
 export default function App() {
   const [campaign, setCampaign] = useState<Campaign | null>(null);
