@@ -29,9 +29,11 @@ builder challenge.
 | --- | --- |
 | ![StellarFund desktop](screenshots/01-desktop.png) | ![StellarFund on mobile](screenshots/02-mobile.png) |
 
-CI/CD pipeline (contracts + frontend tests, then deploy):
+CI/CD pipeline (contracts + frontend tests, then deploy) and frontend test output:
 
-![CI pipeline running](screenshots/03-ci.png)
+| CI/CD pipeline | Test output |
+| --- | --- |
+| ![CI pipeline running](screenshots/03-ci.png) | ![Frontend tests passing](screenshots/04-tests.png) |
 
 ## Architecture — two contracts, one call
 
