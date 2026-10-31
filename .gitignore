@@ -8,3 +8,4 @@ target
 # Frontend
 web/node_modules
 web/dist
+test_snapshots/
